@@ -1,0 +1,18 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+
+<h1>Ataque XSS</h1>
+
+<form action="POST"method="/comments">
+  <label for="">
+    <textarea name="comment" id="" cols="30" rows="4"></textarea>
+    <br>
+    <input type="submit" value="Enviar">
+  </label>
+
+  <div>
+    {{comments}}
+  </div>
+</form>
+{% endblock %}

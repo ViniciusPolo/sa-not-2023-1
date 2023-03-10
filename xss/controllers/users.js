@@ -17,24 +17,22 @@ controller.login = async (req,res) => {
            req.body.password
        ])
 
-       if(result.rows.length > 0) {
-        res.render('loggedin', {
-          title: 'Seja bem-vindo(a)',
-          message: 'Autenticação concluída com sucesso.'
+       if (result){
+        res.render('loggedin',{
+            title: 'Seja Bem Vindo',
+            message: 'Usuário autenticado com sucesso',
         })
-      }
-      else {
-        res.render('loggedin', {
-          title: 'Acesso negado',
-          message: 'Usuário ou senha incorretos.'
+       }else {
+        res.render('loggedin',{
+            title: 'Acesso Negado',
+            message: 'Usuário o senha incorretos',
         })
-      }
-  
+       }
+
+    } catch (error) {
+       console.error(error)
+        
     }
-    catch(error) {
-      res.render('error', { title: 'Erro', error })
-    }
-  }
-  
-  module.exports = controller
-  
+};
+
+module.exports = controller

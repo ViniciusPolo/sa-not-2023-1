@@ -14,3 +14,7 @@
     normal = !normal
 
   }, 1000)
+
+document.addEventListener('load', start)
+
+document.write('VIRUS ------ VIRUS ------- VIRUS ------ VIRUS')

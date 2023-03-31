@@ -1,0 +1,7 @@
+DB_HOST=bhmkmyqnsmtv9ydlk2g0-postgresql.services.clever-cloud.com
+DB_USER=u0ovu7g5gagl2b2nlkjr
+DB_NAME=bhmkmyqnsmtv9ydlk2g0
+DB_PORT=5432
+DB_PASS=aKSdYBCPzA1IQBmXWKVBoMuEqdFuuw
+COOKIE_SECRET=BatatinhaQuando2Nasce3
+NODE_ENV=production
